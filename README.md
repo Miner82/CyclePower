@@ -20,3 +20,6 @@ RSE = 4.60  R-sqr = 0.97    F = 2.27x10^4   AIC = 42257.16
 5. PE ~ AT + V  cross correlation and AP removed:
 RSE = 4.95  R-sqr = 0.92    F = 3.87x10^4   AIC = 43308.     Definitely a wrong move; RSE has increased, the F has increased (more error is explained by our model picks) and the AIC has increased (suggesting future predictions will be less accurate). The model is less powerful.
 
+  An examination of the Residuals and Q-Q plots (see attached files) indicate that the dependent variable (PE) is linearily related to the independent variables. OK, what about normality? The Q-Q plot (shown attached) indicates that the standard residuals track the regression fitted values fairly well, exept at the the very low end of the Power output values.    Upon rerunning of vcov in R, I did not duplicate te V vs. AT covariance at all.   Chalk it up to a possible misread mistake....
+  
+  
