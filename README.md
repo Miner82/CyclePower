@@ -24,7 +24,9 @@ RSE = 4.95  R-sqr = 0.92    F = 3.87x10^4   AIC = 43308.     Definitely a wrong 
   
     An all-subsets regression ranking, using the CAR and LEAPS packages, unfortunately gives ambiguous results. (see attached All Subsets Regr image file).   We really can only rule out the PE~AP model for based its R-squared here.
     I will stick with model #2 for now, based on the AIC and the RSE.
-    The trained set choosing model #2 results in an PE = 454 -1.98(AT) + 0.06(AP) - 0.15(RH) - 0.23(V).   See trained model in attached figures.
+    The trained set choosing model #2 results in an PE = 454 -1.98(AT) + 0.06(AP) - 0.15(RH) - 0.23(V).   Ambient Temp, Humidity and Vacuum have a negative effect on Power Output.  For all, Power declines as they increase, with AT having the greated effect.  - If we can decrease (cool) the ambient temp, we should increase KW output.   A sensitivity analysis should refine this, but for now, we can say that a 2 degree decrease in temp would result in a 1 kw increase in power.
+    The All-Subsets analysis analysis was inconclusive, but as the Ambient Pressure is the weakest factor, we could simply eliminate it.  See the trained model in attached figures.
     As a final thought, we should re-visit interective effects (collinearity) but for now, we will perform a Support Vector Machine:
+    
     
     
