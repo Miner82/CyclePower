@@ -22,4 +22,6 @@ RSE = 4.95  R-sqr = 0.92    F = 3.87x10^4   AIC = 43308.     Definitely a wrong 
 
   An examination of the Residuals and Q-Q plots (see attached files) indicate that the dependent variable (PE) is linearily related to the independent variables. OK, what about normality? The Q-Q plot (shown attached) indicates that the standard residuals track the regression fitted values fairly well, exept at the the very low end of the Power output values.    Upon rerunning of vcov in R, I did not duplicate te V vs. AT covariance at all.   Chalk it up to a possible misread mistake....
   
-  
+    An all-subsets regression ranking, using the CAR and LEAPS packages, unfortunately gives ambiguous results. (see attached All Subsets Regr image file).   We really can only rule out the PE~AP model for based its R-squared here.
+    I will stick with model #2 for now, based on the AIC and the RSE.
+    
